@@ -7,6 +7,17 @@ This will help me show my projects to potential companies and recruiters and thu
 
 I learned how to use diferent bootstrap components like card, navBar and jumbotron.
 
-Deployed aplication
+Deployed aplication: https://antonioalgaba.github.io/Bootstrap-Portfolio/
+
+Web screenshot:
+
+![screenshot 1](images/screenshot1)
+![screenshot 2](images/screenshot2)
+
+## Credits
+
+Bootscrap navBar: https://getbootstrap.com/docs/4.3/components/navbar/
+Bootscrap jumbotron: https://getbootstrap.com/docs/4.3/components/jumbotron/
+Bootscrap card:https: https://getbootstrap.com/docs/4.3/components/card/
 
 
