@@ -1,0 +1,298 @@
+
+:root{
+  --light: rgb(232, 232, 210);
+  --letters: rgb(31, 171, 171);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: rgba(91, 82, 82, 0.968);
+}
+
+h1,
+h2 {
+  color: var(--letters);
+}
+
+p {
+  color: var(--letters);
+  margin: 0;
+  text-align: center;
+  
+}
+
+/*nav Bar*/
+.customNav {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6) !important;
+  color:azure !important;
+  z-index: 10;
+  
+}
+
+/*navBar title "Portfolio*/
+.navbar-brand{
+  color: var(--letters) !important;
+  font-size: 40px;
+  margin-left: 80px;
+  font-family: "Sofia", sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px #ababab;
+  font-style: italic;
+}
+
+.navbar-nav{
+  margin-left: auto;
+  margin-right: 0 !important;  
+}
+
+.nav-item{
+   margin: 0 15px;
+}
+
+.nav-link{
+   color: var(--letters) !important;
+   font-size: 20px;
+}
+.nav-link:hover{
+  box-shadow: 0 0 4px var(--letters);
+}
+
+/*Nav dropdown
+.dropdown-menu {
+  background-color: black  !important;
+  background-size: cover;
+}
+
+.dropdown-item {
+  color: var(--letters) !important ;
+}
+*/
+
+
+/*Jumbotron*/
+.hero{
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: black;
+  height: calc(50vh - 20px);
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  width: 100%;
+}
+
+.jumboCopy {
+  width: 70%;
+  min-width: 500px;
+  max-width: 700px;
+  color: white;
+  text-align: center;
+}
+
+.jumboCopy h1{
+  padding: 40px;
+  width: 100%;
+}
+
+.jumbotron img{
+    position: absolute;
+    left: 80px;
+    top: 130px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;;
+    border-radius: 50%;
+  }
+
+
+
+/*create a 3 grid section*/
+.page-section{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
+  padding: 20px;
+  margin: 10px;
+}
+.page-section h2{
+  text-align: center;
+}
+
+
+#about h2,
+#work h2,
+#contact h2,
+#skills h2{
+  border-right: 3px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 20px;  
+}
+
+/* a grid area on the right part of the work section */
+
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "port1 port2 port3"
+  "port4 port5 port6"
+  ;
+}
+
+#port1{
+  grid-area: port1  
+}
+
+#port2{
+  grid-area: port2; 
+}
+
+#port3{
+  grid-area: port3;
+}
+
+#port4{
+  grid-area: port4;
+}
+
+#port5{
+  grid-area: port5;
+}
+
+/* card css*/
+.card{
+  margin: 20px;
+  height: 400px;
+  background-color: beige;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.projects a{
+  text-decoration:none;
+  color: black;
+}
+
+
+.projects a:hover{
+  opacity: 0.6;
+}
+
+/* skills css*/
+.skills{
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  padding-top: 20px;
+  color: rgb(2, 2, 2);
+  
+}
+ .skills li{
+  list-style: none;
+  font-size: 25px;
+  padding: 0 20px;
+ }
+
+ .skills li:not(:last-child) {
+  border-right: 5px dotted black;
+ }
+
+ /*Contac css*/
+.contact-list{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 30px;
+  list-style: none;
+}
+
+.list-link{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon{
+  height: 40px;
+  width:  40px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: aliceblue;
+}
+
+.list-link,
+.list-link a{
+  color: rgb(8, 8, 8);
+}
+.contact-list a{
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+
+/*footer css*/
+footer{
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/*media query for the 3 section*/
+@media screen and (max-width: 750px){
+  .page-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#about h2,
+#work h2,
+#contact h2,
+#skills h2{
+  border-right: 0px;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+/*medai query for the skill section*/
+@media screen and (max-width: 1080px) {
+  .skills {
+    flex-direction: column;
+  }
+  .skills li:not(:last-child){
+    border-right: none;
+  }
+}
+
+
+@media screen and (max-width: 1080px) {
+  .jumbotron img{
+   display: none;
+  
+    
+  }
+}

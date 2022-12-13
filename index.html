@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Antonio // Web Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- nav -->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    
+    <div id="about"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" > <!--dropdown-->
+          <a class="nav-link" href="#work">
+            Work
+          </a>
+        </li>
+          <!--This part is coming soon-->
+         <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <!--<div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      --> 
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true" >Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--End of nav bar-->
+  <!-- Jumbotron -->
+  <section class="hero">
+    <div class="jumbotron">
+      <img src="./images/IMG_20220429_095735.jpg" alt="Antonio Algaba">
+      <div class="jumboCopy">
+      <h1 class="display-4">Antonio Algaba</h1>
+      <p class="lead">Beginner web developer learning front-end design and 
+        development, expanding his portfolio by attending a bootcamp.</p>
+      </div>
+    </div>
+  </section>
+  <!--main-->
+  <main>
+<!--All .page-section are a grid-->   
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Eu augue ut lectus arcu. Mattis vulputate enim nulla aliquet 
+        porttitor lacus. Vitae congue mauris rhoncus aenean vel elit 
+        scelerisque mauris. Potenti nullam ac tortor vitae purus faucibus 
+        ornare suspendisse sed. Congue eu consequat ac felis donec.
+         Ut pharetra sit amet aliquam. Facilisi nullam vehicula ipsum a a
+         rcu cursus. Id nibh tortor id aliquet lectus proin nibh nisl. 
+         Suscipit tellus mauris a diam maecenas sed enim. In eu mi bibendum 
+         neque egestas congue quisque. Erat nam at lectus urna duis convallis 
+         convallis tellus id.
+         </p>       
+    </section>
+
+  <!-- Work section-->
+    
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+  <!--grid are inside .page-section-->
+      <div class="projects ">
+   <!--card 1-->
+        <div id="port1" class="col-4">
+          <div class="card" style="width: 18rem;">
+            <a href="https://antonioalgaba.github.io/Challenge-1-Horiseon/" target="_blank">
+              <img src="./images/02-portfolio-1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Oriseon</h5>
+              <p class="card-text"> Website more accesible for people with desabilities.
+                This website was full of div tags what I changed for semantic 
+                HTML tags, as well as I introduced alt for all image elements.</p>
+         </div>     
+            </div></a>
+        </div>
+      <!--card 2-->
+        <div id="port2" class="col-4">
+          <div class="card" style="width: 18rem;" >
+            <a href="https://antonioalgaba.github.io/prework-study-guide/" target="_blank">
+              <img src="./images/photo-1461749280684-dccba630e2f6.avif" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Prework Study Guide</h5>
+              <p class="card-text">Guide about what I am learning in the bootcamp.</p>
+        </div>      
+            </div></a>
+          </div>
+        <!--card 3-->
+        <div id="port3" class="col-4">
+          <div class="card" style="width: 18rem;">
+            <a href="https://antonioalgaba.github.io/My-portfolio-page/" target="_blank">
+              <img src="./images/02-portfolio-3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">First Portfolio</h5>
+              <p class="card-text">My first portfolio.</p>
+              
+            </div></a>
+          </div>
+        </div>
+        <!--card 4-->
+        <div id="port4" class="col-4">
+          <div class="card" style="width: 18rem;">
+            <a href="./text/commingSoon.txt" target="_blank">
+              <img src="./images/02-portfolio-4.jpg" class="card-img-top" alt="Project 4">
+            <div class="car-body">
+              <h5 class="card-title">Comming soon</h5>
+              <p class="card-text">Projects coming soon.</p>
+              </div></a>
+          </div>
+        </div>
+        <!--card 5-->
+        <div id="port5" class="col-4">
+          <div class="card" style="width: 18rem;">
+            <a href="./text/commingSoon.txt" target="_blank">
+              <img src="./images/photo-1510936111840-65e151ad71bb.avif" class="card-img-top" alt="Project 5">
+            <div class="card-body">
+              <h5 class="card-title">Comming soon</h5>
+              <p class="card-text">Project comming soon.</p>
+              
+            </div></a>
+        </div>
+          </div>
+      </div>
+    </section>
+    <!--Skills-->
+    <section class="page-section" id="skills">
+      <h2>Skills</h2>
+      <div>
+        <ul class="skills">
+          <li>HTML/CSS/Git</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>APIs</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>And more</li>
+        </ul>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="page-section" id="contact">
+      <h2>Contact Me</h2>
+       <ul class="contact-list">
+        <a href="mailto:antonioalgabaosuna@gmail.com"><li class="list-link"><img class="icon" src="./images/@.png">antonioalgabaosuna@gmail.com</li></a>
+        <li class="list-link"><img class="icon" src="./images/phone.png">07833256991</li>
+        <a href="https://www.linkedin.com/home" target ="_blank"><li class="list-link"><img class="icon" src="./images/linkeIn.png"/>LinkedIn</li></a>
+       </ul>
+    </section>
+  </main>
+<!--Footer-->
+  <footer>
+    &copy; Copyright 2022. Antonio Algaba 
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>
